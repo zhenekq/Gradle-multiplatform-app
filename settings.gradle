@@ -1,0 +1,5 @@
+rootProject.name = 'Task1_parent'
+
+include 'task1-core'
+include 'task1-api'
+

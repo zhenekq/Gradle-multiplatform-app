@@ -1,0 +1,35 @@
+buildscript {
+
+    ext {
+        springBootVersion = '2.0.0.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+}
+
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    group 'by.epamtc.zhenekns.dev'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+}
