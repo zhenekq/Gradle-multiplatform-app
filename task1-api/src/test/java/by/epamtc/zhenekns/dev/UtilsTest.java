@@ -9,7 +9,7 @@ public class UtilsTest {
     @Test
     public void correctResultOfPositiveNumbers(){
         boolean predictableResult = true;
-        boolean result = Utils.isAllPositiveNumbers("12", "333", "444");
+        boolean result = Utils.isAllPositiveNumbers("12", "333", "444", "0");
         assertEquals(result, predictableResult);
     }
 

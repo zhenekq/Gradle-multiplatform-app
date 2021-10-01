@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="by.epamtc.zhenekns.dev.UtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-13T18:29:09" hostname="DESKTOP-0L9SDJV" time="0.016">
+<testsuite name="by.epamtc.zhenekns.dev.UtilsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-01T08:39:34" hostname="DESKTOP-0L9SDJV" time="0.026">
   <properties/>
-  <testcase name="correctResultOfPositiveNumbers()" classname="by.epamtc.zhenekns.dev.UtilsTest" time="0.016"/>
+  <testcase name="incorrectResultOfPositiveNumbers()" classname="by.epamtc.zhenekns.dev.UtilsTest" time="0.024"/>
+  <testcase name="correctResultOfPositiveNumbers()" classname="by.epamtc.zhenekns.dev.UtilsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

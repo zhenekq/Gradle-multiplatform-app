@@ -1,25 +1,21 @@
 package by.epamtc.zhenekns.dev;
 
-import sun.jvm.hotspot.types.WrongTypeException;
+
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
 
 public class Utils {
-    public static boolean isAllPositiveNumbers(String... str){
-
-        for(String element: str){
-            boolean isPositiveNumber = isPositiveNumber(element);
-            if(!isPositiveNumber)
-                return false;
-        }
-        return true;
+    public static boolean isAllPositiveNumbers(String... str) {
+        boolean isAllPositiveNumbers;
+        isAllPositiveNumbers = Arrays.stream(str)
+                .allMatch(StringUtils::isNumeric);
+        return isAllPositiveNumbers;
     }
 
-    private static boolean isPositiveNumber(String str) {
-        double number = 0;
-        try {
-            number = Double.parseDouble(str);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return number >= 0;
+    public static boolean isPositiveNumber(String str) {
+        boolean isPositiveNumber;
+        isPositiveNumber = StringUtils.isNumeric(str);
+        return isPositiveNumber;
     }
 }
